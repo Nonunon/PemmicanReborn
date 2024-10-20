@@ -1,0 +1,35 @@
+<Patch>
+    <!-- Update ingredients for Make_Pemmican -->
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/RecipeDef[defName="Make_Pemmican"]/ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<categories>
+							<li>FoodRaw</li>
+						</categories>
+					</filter>
+					<count>0.5</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+
+    <!-- Update ingredients for Make_PemmicanBulk -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/RecipeDef[defName="Make_PemmicanBulk"]/ingredients</xpath>
+		<value>
+			<ingredients>
+				<li>
+					<filter>
+						<categories>
+							<li>FoodRaw</li>
+						</categories>
+					</filter>
+					<count>2</count>
+				</li>
+			</ingredients>
+		</value>
+	</Operation>
+</Patch>

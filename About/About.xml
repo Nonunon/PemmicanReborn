@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Pemmican Reborn</name>
+  <author>Unon</author>
+  <packageId>unon.pemmicanreborn</packageId>
+  <supportedVersions>
+    <li>1.5</li>
+  </supportedVersions>
+  <description> Patches Pemmican to be made from any meat or veggies while abiding to the laws of no human meat, insect meat, or twisted meat.
+  </description>
+</ModMetaData>
