@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <RecipeDef>
+    <defName>Make_Pemmican_Reborn</defName>
+    <label>make plain pemmican</label>
+    <description>Make plain pemmican, a simple preserved food made entirely of either meat or plants. Not the tastiest, but it lasts a long time without refrigeration.</description>
+    <jobString>Making plain pemmican.</jobString>
+    <workAmount>700</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+			<ingredients>
+				<li>
+					<filter>
+						<categories>
+							<li>FoodRaw</li>
+						</categories>
+					</filter>
+					<count>0.5</count>
+				</li>
+			</ingredients>
+    <products>
+      <Pemmican>16</Pemmican>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <disallowedCategories>
+        <li>AnimalProductRaw</li>
+      </disallowedCategories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>Meat_Human</li>
+        <li>Meat_Megaspider</li>
+        <li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>Pemmican</researchPrerequisite>
+    <displayPriority>1440</displayPriority>
+  </RecipeDef>
+
+  <RecipeDef>
+    <defName>Make_PemmicanBulk_Reborn</defName>
+    <label>make plain pemmican x4</label>
+    <description>Make bulk plain pemmican, a simple preserved food made entirely of either meat or plants. Not the tastiest, but it lasts a long time without refrigeration.</description>
+    <jobString>Making bulk plain pemmican.</jobString>
+    <workAmount>2800</workAmount>
+    <workSpeedStat>CookSpeed</workSpeedStat>
+    <requiredGiverWorkType>Cooking</requiredGiverWorkType>
+    <effectWorking>Cook</effectWorking>
+    <soundWorking>Recipe_CookMeal</soundWorking>
+    <allowMixingIngredients>true</allowMixingIngredients>
+    <ingredientValueGetterClass>IngredientValueGetter_Nutrition</ingredientValueGetterClass>
+			<ingredients>
+				<li>
+					<filter>
+						<categories>
+							<li>FoodRaw</li>
+						</categories>
+					</filter>
+					<count>2</count>
+				</li>
+			</ingredients>
+    <products>
+      <Pemmican>64</Pemmican>
+    </products>
+    <fixedIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <disallowedCategories>
+        <li>AnimalProductRaw</li>
+      </disallowedCategories>
+      <specialFiltersToDisallow>
+        <li>AllowPlantFood</li>
+      </specialFiltersToDisallow>
+    </fixedIngredientFilter>
+    <defaultIngredientFilter>
+      <categories>
+        <li>FoodRaw</li>
+      </categories>
+      <disallowedThingDefs>
+        <li>Meat_Human</li>
+        <li>Meat_Megaspider</li>
+        <li MayRequire="Ludeon.RimWorld.Anomaly">Meat_Twisted</li>
+      </disallowedThingDefs>
+    </defaultIngredientFilter>
+    <workSkill>Cooking</workSkill>
+    <researchPrerequisite>Pemmican</researchPrerequisite>
+    <displayPriority>1450</displayPriority>
+  </RecipeDef>
+  
+</Defs>
